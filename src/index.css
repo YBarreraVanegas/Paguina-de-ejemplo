@@ -1,0 +1,276 @@
+:root{
+  --color1: #000000;
+  --color2: #0e0f1d;
+  --color3: #514f5f;
+  --color4: #98a1b5;
+  --color5: #ccd1e0;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+  font-family: roboto;
+}
+*{
+  box-sizing: border-box;
+
+}
+.container{
+  max-width: 600px;
+  margin: auto;
+}
+header{
+  background-color: var(--color2);
+  
+
+}
+header .logo{
+  margin: 0;
+  padding: 25px 30px;
+  font-weight: bold;
+  color: var(--color5);
+  font-size: 1.8em;
+}
+header .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 250px;
+}
+header a {
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--color4);
+  font-size: 1.5em;
+}
+header a:hover{
+  color: var(--color3);
+}
+
+
+#Banner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: auto;
+  color: var(--color2);
+  background-image:  linear-gradient(217deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3) 50.61%),
+  url('Images/1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 30px;
+}
+
+#que-es {
+  
+}
+#que-es .container{
+  text-align: center;
+  padding: 100px 12px;
+}
+.color-acento{
+  color: var(--color3);
+}
+h1{
+  font-size: 2.5em;
+}
+h2{
+  font-size: 1.8em;
+}
+p{
+  font-size: 1.5em;
+}
+
+ul{
+  list-style: none;
+}
+li{
+  font-size: 1.2em;
+}
+#programas{
+  background-color: var(--color1);
+  color: white;
+  text-align: center;
+}
+
+#programas h2{
+  margin-top: 0;
+}
+#programas .container{
+  padding: 150px 0px;
+ 
+}
+#programas p{
+  display: none;
+}
+#programas .card{
+  width: auto;
+  height: auto;
+  padding: 5% ;
+  margin: 18px;
+  border-radius: 12px;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  align-items: center;
+  font-size: 2.5em;
+  color: var(--color5);
+
+}
+
+
+.card:first-child{
+  background-image:
+  linear-gradient(217deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1) 70.71%),
+  url('Images/22.jpg');
+  background-repeat: no-repeat;
+}
+.card:nth-child(2){
+  background-image:  linear-gradient(217deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1) 70.71%),
+  url('Images/33.jpg');
+  background-repeat: repeat;
+
+
+}
+.card:nth-child(3){
+  background-image:  linear-gradient(217deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1) 70.71%),
+  url('Images/4.jpg');
+  background-repeat: repeat;
+}
+
+#caracteristicas .container{
+  text-align: center;
+  padding: 200px 12px;
+}
+#caracteristicas li{
+  margin: 12px 0px;
+  font-weight: bold;
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--color1);
+  color: var(--color4);
+  height: 80vh;
+}
+
+footer p{
+  margin: 0;
+  color: var(--color2);
+  padding: 12px;
+  font-size: 1.2em;
+}
+
+
+footer .container{
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+@media (min-width: 720px){
+  header{
+    position: fixed;
+    width: 100%;
+  }
+  header .container{
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0.7em;
+    margin-bottom: 5px
+  }
+
+  header nav{
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 2px;
+
+  }
+  #Banner{
+
+    height: 100vh;
+  }
+  #que-es h2{
+    font-size: 2.8em;
+  }
+  #que-es p {
+    font-size: 2.2;
+  }
+  #que-es {
+    height: 100vh;
+
+    
+  }
+  #que-es .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+  }
+  #que-es .img-container{
+    background-image: url(Images/6.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      width: 500px;
+      padding: 0px, 30px;
+      margin:0px;
+      border-radius: 10px;
+      
+  }
+  #que-es .texto{
+    width: 50%;
+    text-align: initial;
+    padding-left: 30px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.8em;
+  }
+  #que-es h2 {
+    margin-top: 0px;
+
+  }
+
+  #caracteristicas{
+    height: 100vh;
+    font-size: 1.8em;
+  }
+  h1{
+    font-size: 3.8em;
+  }
+  #programas .cards{
+    display: flex;
+    justify-content: center;
+    align-items: c
+    enter;
+    width: 90vh;
+ 
+  }
+  #programas h3{
+    margin-top: 0;
+  }
+  #programas p{
+    display: block;
+    margin-bottom: 30px;
+    font-size: 0.5em;
+    color: var(--color5);
+  }
+
+}
